@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Upendo — Koen de Raden</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<nav id="sitenav">
+  <a href="index.html" class="nav-logo">KDR<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li class="has-dd">
+      <button class="nav-btn">Projecten<svg class="chev" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 4l4 4 4-4"/></svg></button>
+      <div class="dropdown">
+        <a href="project-upendo.html"><span class="dd-num">01</span>Upendo</a>
+        <a href="project-dmcaudiotour.html"><span class="dd-num">02</span>Danse Macabre Audio Tour</a>
+        <a href="project-marketingloom.html"><span class="dd-num">03</span>Marketing Loom</a>
+        <div class="dd-div"></div>
+        <a href="index.html#projecten"><span class="dd-num">&#8594;</span>Alle projecten</a>
+      </div>
+    </li>
+    <li><a href="over-mij.html">Over mij</a></li>
+    <li><a href="over-mij.html#stage">Stage</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="over-mij.html#stage" class="nav-stage">Op zoek naar stage</a>
+    <button class="nav-ham" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+
+<div class="proj-hero-img">
+  <img src="https://showcase-portfolio-swart.vercel.app/_next/image?url=%2Fupendogallery.png&w=1920&q=85" alt="Upendo"
+       onerror="this.parentElement.innerHTML='<div class=proj-hero-img-ph>UPENDO</div>'"/>
+</div>
+
+<div class="page-hero">
+  <div class="breadcrumb r">
+    <a href="index.html">Home</a><span class="breadcrumb-sep">/</span>
+    <a href="index.html#projecten">Projecten</a><span class="breadcrumb-sep">/</span>
+    <span>Upendo</span>
+  </div>
+  <h1 class="page-title r">Upendo<em>.</em></h1>
+  <p class="page-sub r">UI design, webontwikkeling en branding.</p>
+</div>
+
+<div class="wrap">
+  <div class="proj-layout">
+    <div>
+      <div class="proj-body-text r">
+        <p>Voeg hier een beschrijving toe van het project. Wat was de opdracht en wat was jouw rol?</p>
+        <h3>Het probleem</h3>
+        <p>Beschrijf het probleem of de uitdaging die dit project moest oplossen. Wat was de aanleiding en voor wie was dit?</p>
+        <h3>Mijn aanpak</h3>
+        <p>Hoe ben je te werk gegaan? Welke ontwerpkeuzes heb je gemaakt en waarom? Hoe zag het proces eruit van schets tot eindproduct?</p>
+        <h3>Het resultaat</h3>
+        <p>Wat was het eindresultaat? Wat heb je geleerd? Wat zou je de volgende keer anders doen?</p>
+      </div>
+      <div class="img-gallery r">
+        <div class="gal-img">
+          <img src="https://showcase-portfolio-swart.vercel.app/_next/image?url=%2Fupendogallery.png&w=800&q=75" alt="Upendo screenshot 1"
+               onerror="this.parentElement.innerHTML='<div class=gal-ph>Screenshot 1</div>'"/>
+        </div>
+        <div class="gal-img">
+          <img src="https://showcase-portfolio-swart.vercel.app/_next/image?url=%2Fupendogallery.png&w=800&q=75" alt="Upendo screenshot 2"
+               onerror="this.parentElement.innerHTML='<div class=gal-ph>Screenshot 2</div>'"/>
+        </div>
+      </div>
+      <div class="r">
+        <a href="https://showcase-portfolio-swart.vercel.app/gallery/upendo" class="btn btn-blue" target="_blank">Bekijk live project &#8599;</a>
+        <a href="index.html#projecten" class="btn btn-outline" style="margin-left:10px;">Alle projecten</a>
+      </div>
+    </div>
+    <aside class="r" style="transition-delay:.1s">
+      <div class="sidebar-card">
+        <div class="sidebar-card-head">Project details</div>
+        <div class="sidebar-row"><span class="sidebar-label">Nummer</span><span class="sidebar-val">01</span></div>
+        <div class="sidebar-row"><span class="sidebar-label">Type</span><span class="sidebar-val">Schoolproject</span></div>
+        <div class="sidebar-row"><span class="sidebar-label">Jaar</span><span class="sidebar-val">2024 / 2025</span></div>
+        <div class="sidebar-row"><span class="sidebar-label">Rol</span><span class="sidebar-val">Designer & Developer</span></div>
+      </div>
+      <div class="sidebar-card">
+        <div class="sidebar-card-head">Technologieen</div>
+        <div class="tag-row"><span class="ptag">UI Design</span><span class="ptag">Web Dev</span><span class="ptag">Figma</span></div>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<div class="proj-nav">
+  <span></span>
+  <a href="project-dmcaudiotour.html" class="proj-nav-link"><div style="text-align:right"><span class="proj-nav-label">Volgend project</span>Danse Macabre Audio Tour</div> &#8594;</a>
+</div>
+
+<footer>
+  <span>&#169; 2025 Koen de Raden</span>
+  <div style="display:flex;gap:1.5rem;">
+    <a href="https://github.com/koenderaden" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/koen-de-raden-b5a797320" target="_blank">LinkedIn</a>
+    <a href="mailto:koenderaden@gmail.com">E-mail</a>
+  </div>
+</footer>
+
+<script>
+// Hamburger
+var ham = document.querySelector('.nav-ham');
+var nl = document.querySelector('.nav-links');
+if(ham) ham.addEventListener('click',function(){nl.classList.toggle('open');});
+
+// Scroll reveal
+var revEls = document.querySelectorAll('.r,.r2');
+var io = new IntersectionObserver(function(entries){
+  entries.forEach(function(e,i){
+    if(e.isIntersecting){
+      setTimeout(function(){e.target.classList.add('in');},i*70);
+      io.unobserve(e.target);
+    }
+  });
+},{threshold:0.08});
+revEls.forEach(function(el){io.observe(el);});
+
+// Skill bars
+document.querySelectorAll('.sbar-fill').forEach(function(bar){
+  var o=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){setTimeout(function(){bar.style.width=bar.dataset.w+'%';},200);o.unobserve(bar);}
+    });
+  },{threshold:0.5});
+  o.observe(bar);
+});
+</script>
+
+</body>
+</html>
