@@ -15,10 +15,10 @@
       <button class="nav-btn">Projecten<svg class="chev" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 4l4 4 4-4"/></svg></button>
       <div class="dropdown">
         <a href="project-upendo.html"><span class="dd-num">01</span>Upendo</a>
-        <a href="project-dmcaudiotour.html"><span class="dd-num">02</span>Danse Macabre Audio Tour</a>
-        <a href="project-marketingloom.html"><span class="dd-num">03</span>Marketing Loom</a>
-        <a href="project-afvalwijzer.html"><span class="dd-num">04</span>Afvalwijzer</a>
-        <a href="project-traveltracker.html"><span class="dd-num">05</span>Traveltracker</a>
+        <a href="project-marketingloom.html"><span class="dd-num">02</span>Marketing Loom</a>
+        <a href="project-afvalwijzer.html"><span class="dd-num">03</span>Afvalwijzer</a>
+        <a href="project-traveltracker.html"><span class="dd-num">04</span>Traveltracker</a>
+        <a href="project-5.html"><span class="dd-num">05</span>Project 5</a>
         <a href="project-6.html"><span class="dd-num">06</span>Project 6</a>
         <div class="dd-div"></div>
         <a href="index.html#projecten"><span class="dd-num">&#8594;</span>Alle projecten</a>
@@ -34,8 +34,7 @@
 </nav>
 
 <div class="proj-hero-img">
-  <!-- Voeg hier een header afbeelding toe: <img src="jouw-afbeelding.jpg" alt="Traveltracker"/> -->
-  <div class="proj-hero-img-ph">TRAVELTRACKER</div>
+  <img src="screenshot-traveltracker.png" alt="Traveltracker" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=proj-hero-img-ph>TRAVELTRACKER</div>'"/>
 </div>
 
 <div class="page-hero">
@@ -52,62 +51,41 @@
   <div class="proj-layout">
     <div>
       <div class="proj-body-text r">
-        <!-- Vul hier jouw projectbeschrijving in -->
         <p>Voeg hier een beschrijving toe van het project. Wat was de opdracht en wat was jouw rol?</p>
-
         <h3>Het probleem</h3>
-        <p>Beschrijf het probleem of de uitdaging die dit project moest oplossen. Wat was de aanleiding?</p>
-
+        <p>Beschrijf het probleem of de uitdaging die dit project moest oplossen.</p>
         <h3>Mijn aanpak</h3>
         <p>Hoe ben je te werk gegaan? Welke ontwerpkeuzes heb je gemaakt en waarom?</p>
-
         <h3>Het resultaat</h3>
-        <p>Wat was het eindresultaat? Wat heb je geleerd van dit project?</p>
+        <p>Wat was het eindresultaat? Wat heb je geleerd?</p>
       </div>
-
-      <!-- Galerij — vervang de placeholders door jouw eigen screenshots -->
-      <div class="img-gallery r">
-        <div class="gal-img">
-          <!-- <img src="screenshot-1.jpg" alt="Traveltracker screenshot 1"/> -->
-          <div class="gal-ph">Screenshot 1</div>
-        </div>
-        <div class="gal-img">
-          <!-- <img src="screenshot-2.jpg" alt="Traveltracker screenshot 2"/> -->
-          <div class="gal-ph">Screenshot 2</div>
-        </div>
-      </div>
-
+      <div class="img-gallery r"><div class="gal-img">
+          <img src="screenshot-traveltracker.png" alt="Traveltracker screenshot" onerror="this.parentElement.innerHTML='<div class=gal-ph>Screenshot</div>'"/>
+        </div><div class="gal-img">
+          <img src="screenshot-traveltracker.png" alt="Traveltracker screenshot" onerror="this.parentElement.innerHTML='<div class=gal-ph>Screenshot</div>'"/>
+        </div></div>
       <div class="r" style="display:flex;gap:10px;flex-wrap:wrap;">
-        <!-- <a href="https://jouw-live-link.nl" class="btn btn-blue" target="_blank">Bekijk live &#8599;</a> -->
+        
         <a href="index.html#projecten" class="btn btn-outline">&#8592; Alle projecten</a>
       </div>
     </div>
-
     <aside class="r" style="transition-delay:.1s">
       <div class="sidebar-card">
         <div class="sidebar-card-head">Project details</div>
-        <div class="sidebar-row"><span class="sidebar-label">Nummer</span><span class="sidebar-val">05</span></div>
+        <div class="sidebar-row"><span class="sidebar-label">Nummer</span><span class="sidebar-val">04</span></div>
         <div class="sidebar-row"><span class="sidebar-label">Type</span><span class="sidebar-val">Persoonlijk project</span></div>
         <div class="sidebar-row"><span class="sidebar-label">Jaar</span><span class="sidebar-val">2024/2025</span></div>
         <div class="sidebar-row"><span class="sidebar-label">Rol</span><span class="sidebar-val">Designer &amp; Developer</span></div>
       </div>
       <div class="sidebar-card">
         <div class="sidebar-card-head">Technologieen</div>
-        <div class="tag-row">
-          <!-- Voeg hier jouw tags toe, bijv: -->
-          <!-- <span class="ptag">React</span> -->
-          <!-- <span class="ptag">Figma</span> -->
-          <span style="font-size:12px;color:var(--muted);padding:1rem 1.25rem;display:block;">Voeg technologieen toe</span>
-        </div>
+        <div class="tag-row"><span class="ptag">Persoonlijk</span><span class="ptag">React</span><span class="ptag">Leaflet</span></div>
       </div>
     </aside>
   </div>
 </div>
 
-<div class="proj-nav-bar">
-  <a href="project-afvalwijzer.html" class="proj-nav-link">&#8592; <div><span class="proj-nav-label">Vorig project</span>Afvalwijzer</div></a>
-  <a href="project-6.html" class="proj-nav-link"><div style="text-align:right"><span class="proj-nav-label">Volgend project</span>Project 6</div> &#8594;</a>
-</div>
+<div class="proj-nav-bar"><a href="project-afvalwijzer.html" class="proj-nav-link">&#8592; <div><span class="proj-nav-label">Vorig project</span>Afvalwijzer</div></a><a href="project-5.html" class="proj-nav-link"><div style="text-align:right"><span class="proj-nav-label">Volgend project</span>Project 5</div> &#8594;</a></div>
 
 <footer>
   <span>&#169; 2025 Koen de Raden</span>
@@ -121,15 +99,35 @@
 var ham = document.querySelector('.nav-ham');
 var nl  = document.querySelector('.nav-links');
 if (ham) ham.addEventListener('click', function() { nl.classList.toggle('open'); });
+var dropdowns = document.querySelectorAll('.has-dd');
+dropdowns.forEach(function(dd) {
+  var t;
+  dd.addEventListener('mouseenter', function() {
+    clearTimeout(t);
+    var d = dd.querySelector('.dropdown');
+    d.style.opacity='1';d.style.visibility='visible';d.style.pointerEvents='auto';d.style.transform='translateY(0)';
+  });
+  dd.addEventListener('mouseleave', function() {
+    t = setTimeout(function() {
+      var d = dd.querySelector('.dropdown');
+      d.style.opacity='0';d.style.visibility='hidden';d.style.pointerEvents='none';d.style.transform='translateY(4px)';
+    }, 200);
+  });
+});
 var io = new IntersectionObserver(function(entries) {
   entries.forEach(function(e, i) {
-    if (e.isIntersecting) {
-      setTimeout(function() { e.target.classList.add('in'); }, i * 70);
-      io.unobserve(e.target);
-    }
+    if (e.isIntersecting) { setTimeout(function() { e.target.classList.add('in'); }, i * 70); io.unobserve(e.target); }
   });
 }, { threshold: 0.06 });
 document.querySelectorAll('.r, .r2').forEach(function(el) { io.observe(el); });
+document.querySelectorAll('.sbar-fill').forEach(function(bar) {
+  var o = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) { setTimeout(function() { bar.style.width = bar.dataset.w + '%'; }, 200); o.unobserve(bar); }
+    });
+  }, { threshold: 0.5 });
+  o.observe(bar);
+});
 </script>
 </body>
 </html>
