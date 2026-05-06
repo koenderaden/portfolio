@@ -264,7 +264,8 @@ footer a:hover { color: var(--blue3); }
 .hero-content {
   position: relative; z-index: 2;
   width: 100%;
-  padding: 62px 8vw 6vh 8vw;
+  max-width: 100%;
+  padding: 62px 6vw 6vh 6vw;
   display: flex; flex-direction: column; justify-content: center;
   min-height: 100vh;
 }
@@ -275,7 +276,7 @@ footer a:hover { color: var(--blue3); }
   opacity: 0; animation: fadein .5s .3s both;
 }
 .hero-eyebrow::before { content: ''; display: block; width: 28px; height: 1px; background: var(--blue2); }
-.tw-line { font-family: var(--fh); font-size: clamp(2.4rem, 5.0vw, 6.0rem); font-weight: 800; letter-spacing: -2px; line-height: 1.0; display: flex; align-items: center; }
+.tw-line { font-family: var(--fh); font-size: clamp(2rem, 3.8vw, 5rem); font-weight: 800; letter-spacing: -2px; line-height: 1.0; display: flex; align-items: center; overflow: hidden; }
 .tw-line .txt { white-space: nowrap; display: inline-block; overflow: hidden; }
 .l1 .txt { animation: typewriter .55s steps(30) .6s  both; }
 .l2 .txt { animation: typewriter .5s  steps(30) 1.3s both; color: transparent; -webkit-text-stroke: 1.5px rgba(255,255,255,.22); }
@@ -492,14 +493,18 @@ footer a:hover { color: var(--blue3); }
   .nav-ham { display: flex; }
   .nav-cta { display: none; }
   .dropdown {
-    position: static; opacity: 1; visibility: visible;
-    pointer-events: auto; transform: none;
-    background: transparent; border: none; box-shadow: none;
-    padding: 0 0 0 1rem;
+    position: static; opacity: 0; visibility: hidden;
+    pointer-events: none; max-height: 0; overflow: hidden;
+    transform: none; background: transparent; border: none;
+    box-shadow: none; padding: 0 0 0 1rem; transition: all .3s;
   }
+  .has-dd.dd-open .dropdown {
+    opacity: 1; visibility: visible; pointer-events: auto; max-height: 500px;
+  }
+  .has-dd.dd-open .chev { transform: rotate(180deg); }
   .wrap { padding: 3.5rem 1.25rem; }
   .hero-content { padding: 80px 1.25rem 4vh; }
-  .tw-line { font-size: clamp(2rem, 8vw, 4rem) !important; }
+  .tw-line { font-size: clamp(1.8rem, 7vw, 3rem) !important; }
   .hero-sub { font-size: 14px; max-width: 100%; }
   .section-title { font-size: clamp(1.8rem, 6vw, 3rem); }
   .page-title { font-size: clamp(2rem, 8vw, 3.5rem); }

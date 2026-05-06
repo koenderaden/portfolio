@@ -139,28 +139,66 @@
 <script>
 var ham = document.querySelector('.nav-ham');
 var nl  = document.querySelector('.nav-links');
-if (ham) ham.addEventListener('click', function() { nl.classList.toggle('open'); });
+
+// Hamburger menu
+if (ham) ham.addEventListener('click', function() {
+  nl.classList.toggle('open');
+});
+
+// Projecten dropdown — mobiel: klik, desktop: hover
 var dropdowns = document.querySelectorAll('.has-dd');
 dropdowns.forEach(function(dd) {
   var t;
+  var btn = dd.querySelector('.nav-btn');
+
+  // Desktop hover
   dd.addEventListener('mouseenter', function() {
+    if (window.innerWidth <= 768) return;
     clearTimeout(t);
     var d = dd.querySelector('.dropdown');
     d.style.opacity='1';d.style.visibility='visible';d.style.pointerEvents='auto';d.style.transform='translateY(0)';
   });
   dd.addEventListener('mouseleave', function() {
+    if (window.innerWidth <= 768) return;
     t = setTimeout(function() {
       var d = dd.querySelector('.dropdown');
       d.style.opacity='0';d.style.visibility='hidden';d.style.pointerEvents='none';d.style.transform='translateY(4px)';
     }, 200);
   });
+
+  // Mobiel klik op knop
+  if (btn) {
+    btn.addEventListener('click', function(e) {
+      if (window.innerWidth > 768) return;
+      e.stopPropagation();
+      dd.classList.toggle('dd-open');
+    });
+  }
 });
+
+// Scroll reveal
 var io = new IntersectionObserver(function(entries) {
   entries.forEach(function(e, i) {
-    if (e.isIntersecting) { setTimeout(function() { e.target.classList.add('in'); }, i * 70); io.unobserve(e.target); }
+    if (e.isIntersecting) {
+      setTimeout(function() { e.target.classList.add('in'); }, i * 70);
+      io.unobserve(e.target);
+    }
   });
 }, { threshold: 0.06 });
 document.querySelectorAll('.r, .r2').forEach(function(el) { io.observe(el); });
+
+// Skill bars
+document.querySelectorAll('.sbar-fill').forEach(function(bar) {
+  var o = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) {
+        setTimeout(function() { bar.style.width = bar.dataset.w + '%'; }, 200);
+        o.unobserve(bar);
+      }
+    });
+  }, { threshold: 0.5 });
+  o.observe(bar);
+});
 </script>
 
 </body>
