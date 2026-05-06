@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+
 <nav id="sitenav">
   <a href="index.html" class="nav-logo">KDR<span>.</span></a>
   <ul class="nav-links">
@@ -34,58 +35,93 @@
 </nav>
 
 <div class="proj-hero-img">
-  <img src="screenshot-marketingloom.png" alt="Marketing Loom" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=proj-hero-img-ph>MARKETING LOOM</div>'"/>
+  <img src="screenshot-marketingloom.png" alt="Marketing Loom"
+       onerror="this.parentElement.innerHTML='<div class=proj-hero-img-ph>MARKETING LOOM</div>'"/>
 </div>
 
-<div class="page-hero">
-  <div class="breadcrumb r">
-    <a href="index.html">Home</a><span class="breadcrumb-sep">/</span>
-    <a href="index.html#projecten">Projecten</a><span class="breadcrumb-sep">/</span>
-    <span>Marketing Loom</span>
-  </div>
-  <h1 class="page-title r">Marketing Loom<em>.</em></h1>
-  <p class="page-sub r">Marketingplatform met Storyblok CMS en Next.js.</p>
-</div>
-
-<div class="wrap">
+<div class="wrap" style="padding-top:3rem;">
   <div class="proj-layout">
+
     <div>
-      <div class="proj-body-text r">
-        <p>Voeg hier een beschrijving toe van het project. Wat was de opdracht en wat was jouw rol?</p>
-        <h3>Het probleem</h3>
-        <p>Beschrijf het probleem of de uitdaging die dit project moest oplossen.</p>
-        <h3>Mijn aanpak</h3>
-        <p>Hoe ben je te werk gegaan? Welke ontwerpkeuzes heb je gemaakt en waarom?</p>
-        <h3>Het resultaat</h3>
-        <p>Wat was het eindresultaat? Wat heb je geleerd?</p>
+      <div class="breadcrumb r">
+        <a href="index.html">Home</a><span class="breadcrumb-sep">/</span>
+        <a href="index.html#projecten">Projecten</a><span class="breadcrumb-sep">/</span>
+        <span>Marketing Loom</span>
       </div>
-      <div class="img-gallery r"><div class="gal-img">
-          <img src="screenshot-marketingloom.png" alt="Marketing Loom screenshot" onerror="this.parentElement.innerHTML='<div class=gal-ph>Screenshot</div>'"/>
-        </div><div class="gal-img">
-          <img src="screenshot-home.png" alt="Marketing Loom screenshot" onerror="this.parentElement.innerHTML='<div class=gal-ph>Screenshot</div>'"/>
-        </div></div>
+      <h1 class="page-title r" style="margin-bottom:1rem;">Marketing Loom<em>.</em></h1>
+      <p class="page-sub r" style="margin-bottom:3rem;">Een marketingnieuwsplatform gebouwd met Storyblok CMS en Next.js.</p>
+
+      <div class="proj-body-text r">
+
+        <h3>Introductie</h3>
+        <p>Marketing Loom is ontwikkeld als een teamproject voor 2ManyDots. Het doel was om marketingprofessionals, communicatie-experts en ondernemers te voorzien van actuele inzichten, trends en ontwikkelingen in de marketingwereld. Het platform is opgezet als een marketingnieuwssite met dagelijkse artikelen, analyses en expertinterviews. Omdat het om een opzet ging, bevatten de artikelen op het platform geen echte content maar zijn ze als placeholders neergezet.</p>
+
+        <p>Binnen het team was ik verantwoordelijk voor het design van de website en voor het bouwen van het inlogscherm.</p>
+
+        <h3>Het platform</h3>
+        <p>Marketing Loom biedt gebruikers de mogelijkheid om in te schrijven op een nieuwsbrief en deel te nemen aan webinars en evenementen. De website is ontworpen om snel, gebruiksvriendelijk en visueel aantrekkelijk te zijn. Interactieve elementen zoals een evenementenkalender, sociale media-integratie en advertentieplaatsingen maken onderdeel uit van het concept.</p>
+
+        <h3>Technologie</h3>
+        <p>Het platform is gebouwd met Storyblok CMS voor het beheren van content en gestyled met Tailwind CSS. Dit zorgt voor een moderne, responsieve opzet die eenvoudig uitbreidbaar is. Next.js is gebruikt als framework voor snelle laadtijden en een goede gebruikerservaring.</p>
+
+        <h3>Webdesign</h3>
+        <p>Marketing Loom is ontworpen met een moderne, strakke interface die de nadruk legt op gebruikerservaring en toegankelijkheid. Het ontwerp heeft een responsieve layout die naadloos aanpast op alle apparaten, van desktop tot mobiel.</p>
+
+        <h3>Functies</h3>
+        <p>De website omvat onder andere dagelijkse artikelen en analyses, een interactieve evenementenkalender, een nieuwsbriefabonnement, sociale media-integratie en advertentieruimte voor gerichte marketingcampagnes.</p>
+
+      </div>
+
+      <div class="img-gallery r" style="margin-top:3rem;gap:1.5rem;">
+        <div class="gal-img">
+          <img src="screenshot-marketingloom.png" alt="Marketing Loom homepage"
+               onerror="this.parentElement.innerHTML='<div class=gal-ph>Screenshot 1</div>'"/>
+        </div>
+        <div class="gal-img">
+          <img src="screenshot-marketingloom-2.png" alt="Marketing Loom mobiel"
+               onerror="this.parentElement.innerHTML='<div class=gal-ph>Screenshot 2</div>'"/>
+        </div>
+      </div>
+
       <div class="r" style="display:flex;gap:10px;flex-wrap:wrap;">
-        <a href="https://showcase-portfolio-swart.vercel.app/gallery/marketingloom" class="btn btn-blue" target="_blank">Bekijk live &#8599;</a>
+        <a href="https://marketingloom.vercel.app/" class="btn btn-blue" target="_blank">Bekijk live &#8599;</a>
         <a href="index.html#projecten" class="btn btn-outline">&#8592; Alle projecten</a>
       </div>
     </div>
+
     <aside class="r" style="transition-delay:.1s">
       <div class="sidebar-card">
         <div class="sidebar-card-head">Project details</div>
         <div class="sidebar-row"><span class="sidebar-label">Nummer</span><span class="sidebar-val">02</span></div>
         <div class="sidebar-row"><span class="sidebar-label">Type</span><span class="sidebar-val">Schoolproject</span></div>
+        <div class="sidebar-row"><span class="sidebar-label">Opdrachtgever</span><span class="sidebar-val">2ManyDots</span></div>
         <div class="sidebar-row"><span class="sidebar-label">Jaar</span><span class="sidebar-val">2024/2025</span></div>
         <div class="sidebar-row"><span class="sidebar-label">Rol</span><span class="sidebar-val">Designer &amp; Developer</span></div>
       </div>
       <div class="sidebar-card">
         <div class="sidebar-card-head">Technologieen</div>
-        <div class="tag-row"><span class="ptag">Next.js</span><span class="ptag">Storyblok</span><span class="ptag">Branding</span></div>
+        <div class="tag-row">
+          <span class="ptag">Next.js</span>
+          <span class="ptag">Storyblok</span>
+          <span class="ptag">Tailwind CSS</span>
+          <span class="ptag">Figma</span>
+          <span class="ptag">UI Design</span>
+        </div>
       </div>
+      <a href="https://marketingloom.vercel.app/" class="btn btn-blue" target="_blank" style="width:100%;justify-content:center;margin-top:.5rem;">Live bekijken &#8599;</a>
     </aside>
+
   </div>
 </div>
 
-<div class="proj-nav-bar"><a href="project-upendo.html" class="proj-nav-link">&#8592; <div><span class="proj-nav-label">Vorig project</span>Upendo</div></a><a href="project-afvalwijzer.html" class="proj-nav-link"><div style="text-align:right"><span class="proj-nav-label">Volgend project</span>Afvalwijzer</div> &#8594;</a></div>
+<div class="proj-nav-bar">
+  <a href="project-upendo.html" class="proj-nav-link">
+    &#8592; <div><span class="proj-nav-label">Vorig project</span>Upendo</div>
+  </a>
+  <a href="project-afvalwijzer.html" class="proj-nav-link">
+    <div style="text-align:right"><span class="proj-nav-label">Volgend project</span>Afvalwijzer</div> &#8594;
+  </a>
+</div>
 
 <footer>
   <span>&#169; 2025 Koen de Raden</span>
@@ -95,6 +131,7 @@
     <a href="mailto:koenderaden@gmail.com">E-mail</a>
   </div>
 </footer>
+
 <script>
 var ham = document.querySelector('.nav-ham');
 var nl  = document.querySelector('.nav-links');
@@ -120,14 +157,7 @@ var io = new IntersectionObserver(function(entries) {
   });
 }, { threshold: 0.06 });
 document.querySelectorAll('.r, .r2').forEach(function(el) { io.observe(el); });
-document.querySelectorAll('.sbar-fill').forEach(function(bar) {
-  var o = new IntersectionObserver(function(entries) {
-    entries.forEach(function(e) {
-      if (e.isIntersecting) { setTimeout(function() { bar.style.width = bar.dataset.w + '%'; }, 200); o.unobserve(bar); }
-    });
-  }, { threshold: 0.5 });
-  o.observe(bar);
-});
 </script>
+
 </body>
 </html>
