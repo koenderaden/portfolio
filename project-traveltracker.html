@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+
 <nav id="sitenav">
   <a href="index.html" class="nav-logo">KDR<span>.</span></a>
   <ul class="nav-links">
@@ -34,41 +35,55 @@
 </nav>
 
 <div class="proj-hero-img">
-  <img src="screenshot-traveltracker.png" alt="Traveltracker" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=proj-hero-img-ph>TRAVELTRACKER</div>'"/>
+  <img src="screenshot-traveltracker.png" alt="Traveltracker"
+       onerror="this.parentElement.innerHTML='<div class=proj-hero-img-ph>TRAVELTRACKER</div>'"/>
 </div>
 
-<div class="page-hero">
-  <div class="breadcrumb r">
-    <a href="index.html">Home</a><span class="breadcrumb-sep">/</span>
-    <a href="index.html#projecten">Projecten</a><span class="breadcrumb-sep">/</span>
-    <span>Traveltracker</span>
-  </div>
-  <h1 class="page-title r">Traveltracker<em>.</em></h1>
-  <p class="page-sub r">Een persoonlijk project waarbij ik reizen bijhoud en visualiseer.</p>
-</div>
-
-<div class="wrap">
+<div class="wrap" style="padding-top:3rem;">
   <div class="proj-layout">
+
     <div>
-      <div class="proj-body-text r">
-        <p>Voeg hier een beschrijving toe van het project. Wat was de opdracht en wat was jouw rol?</p>
-        <h3>Het probleem</h3>
-        <p>Beschrijf het probleem of de uitdaging die dit project moest oplossen.</p>
-        <h3>Mijn aanpak</h3>
-        <p>Hoe ben je te werk gegaan? Welke ontwerpkeuzes heb je gemaakt en waarom?</p>
-        <h3>Het resultaat</h3>
-        <p>Wat was het eindresultaat? Wat heb je geleerd?</p>
+      <div class="breadcrumb r">
+        <a href="index.html">Home</a><span class="breadcrumb-sep">/</span>
+        <a href="index.html#projecten">Projecten</a><span class="breadcrumb-sep">/</span>
+        <span>Traveltracker</span>
       </div>
-      <div class="img-gallery r"><div class="gal-img">
-          <img src="screenshot-traveltracker.png" alt="Traveltracker screenshot" onerror="this.parentElement.innerHTML='<div class=gal-ph>Screenshot</div>'"/>
-        </div><div class="gal-img">
-          <img src="screenshot-traveltracker.png" alt="Traveltracker screenshot" onerror="this.parentElement.innerHTML='<div class=gal-ph>Screenshot</div>'"/>
-        </div></div>
+      <h1 class="page-title r" style="margin-bottom:1rem;">Traveltracker<em>.</em></h1>
+      <p class="page-sub r" style="margin-bottom:3rem;">Een persoonlijk project waarbij ik reizen bijhoud en visualiseer op een interactieve wereldkaart.</p>
+
+      <div class="proj-body-text r">
+
+        <h3>Introductie</h3>
+        <p>Traveltracker is een interactieve webapplicatie waarmee gebruikers hun bezochte landen kunnen bijhouden op een wereldkaart. Het project is volledig zelfstandig ontwikkeld als portfoliostuk, met focus op een moderne gebruikerservaring voor jongeren.</p>
+
+        <h3>Het probleem</h3>
+        <p>Ik wilde een overzichtelijke manier om bij te houden welke landen ik al heb bezocht en welke landen nog op mijn bucketlist staan. Bestaande apps waren te complex of zagen er niet aantrekkelijk uit. Ik besloot zelf een oplossing te bouwen die zowel functioneel als visueel sterk is.</p>
+
+        <h3>Mijn aanpak</h3>
+        <p>Ik ben begonnen met het uitwerken van de functionaliteiten en het ontwerp. Vervolgens heb ik de applicatie gebouwd met React en Vite als frontend framework, D3.js voor de interactieve wereldkaart en localStorage voor het opslaan van data. Ik heb bewust gekozen voor een donker kleurenpalet met paarse en groene accenten om de app een moderne, energieke uitstraling te geven die aansluit bij een jong publiek. Elk continent krijgt een eigen kleur op de kaart voor duidelijke visuele feedback. De app is volledig responsive en werkt op zowel desktop als mobiel.</p>
+
+        <h3>Het resultaat</h3>
+        <p>Het eindresultaat is een volledig werkende webapplicatie waarbij gebruikers landen kunnen markeren als bezocht of toevoegen aan hun bucketlist, kunnen inzoomen op de kaart, landen kunnen zoeken via een zoekbalk en statistieken kunnen bekijken per continent. Tijdens dit project heb ik veel geleerd over het werken met D3.js, GeoJSON data, React state management en responsive design.</p>
+
+      </div>
+
+      <div class="img-gallery r" style="margin-top:3rem;gap:1.5rem;">
+        <div class="gal-img">
+          <img src="screenshot-traveltracker.png" alt="Traveltracker wereldkaart"
+               onerror="this.parentElement.innerHTML='<div class=gal-ph>Screenshot 1</div>'"/>
+        </div>
+        <div class="gal-img">
+          <img src="screenshot-traveltracker-2.png" alt="Traveltracker statistieken"
+               onerror="this.parentElement.innerHTML='<div class=gal-ph>Screenshot 2</div>'"/>
+        </div>
+      </div>
+
       <div class="r" style="display:flex;gap:10px;flex-wrap:wrap;">
-        
+        <a href="https://traveltracker-pink.vercel.app/" class="btn btn-blue" target="_blank">Bekijk live &#8599;</a>
         <a href="index.html#projecten" class="btn btn-outline">&#8592; Alle projecten</a>
       </div>
     </div>
+
     <aside class="r" style="transition-delay:.1s">
       <div class="sidebar-card">
         <div class="sidebar-card-head">Project details</div>
@@ -79,13 +94,29 @@
       </div>
       <div class="sidebar-card">
         <div class="sidebar-card-head">Technologieen</div>
-        <div class="tag-row"><span class="ptag">Persoonlijk</span><span class="ptag">React</span><span class="ptag">Leaflet</span></div>
+        <div class="tag-row">
+          <span class="ptag">React</span>
+          <span class="ptag">Vite</span>
+          <span class="ptag">D3.js</span>
+          <span class="ptag">GeoJSON</span>
+          <span class="ptag">localStorage</span>
+          <span class="ptag">Figma</span>
+        </div>
       </div>
+      <a href="https://traveltracker-pink.vercel.app/" class="btn btn-blue" target="_blank" style="width:100%;justify-content:center;margin-top:.5rem;">Live bekijken &#8599;</a>
     </aside>
+
   </div>
 </div>
 
-<div class="proj-nav-bar"><a href="project-afvalwijzer.html" class="proj-nav-link">&#8592; <div><span class="proj-nav-label">Vorig project</span>Afvalwijzer</div></a><a href="project-5.html" class="proj-nav-link"><div style="text-align:right"><span class="proj-nav-label">Volgend project</span>Project 5</div> &#8594;</a></div>
+<div class="proj-nav-bar">
+  <a href="project-afvalwijzer.html" class="proj-nav-link">
+    &#8592; <div><span class="proj-nav-label">Vorig project</span>Afvalwijzer</div>
+  </a>
+  <a href="project-5.html" class="proj-nav-link">
+    <div style="text-align:right"><span class="proj-nav-label">Volgend project</span>Project 5</div> &#8594;
+  </a>
+</div>
 
 <footer>
   <span>&#169; 2025 Koen de Raden</span>
@@ -95,6 +126,7 @@
     <a href="mailto:koenderaden@gmail.com">E-mail</a>
   </div>
 </footer>
+
 <script>
 var ham = document.querySelector('.nav-ham');
 var nl  = document.querySelector('.nav-links');
@@ -120,14 +152,7 @@ var io = new IntersectionObserver(function(entries) {
   });
 }, { threshold: 0.06 });
 document.querySelectorAll('.r, .r2').forEach(function(el) { io.observe(el); });
-document.querySelectorAll('.sbar-fill').forEach(function(bar) {
-  var o = new IntersectionObserver(function(entries) {
-    entries.forEach(function(e) {
-      if (e.isIntersecting) { setTimeout(function() { bar.style.width = bar.dataset.w + '%'; }, 200); o.unobserve(bar); }
-    });
-  }, { threshold: 0.5 });
-  o.observe(bar);
-});
 </script>
+
 </body>
 </html>
